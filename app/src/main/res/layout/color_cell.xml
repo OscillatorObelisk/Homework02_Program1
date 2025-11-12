@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_v_cell_hex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Hex: FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_v_cell_red"
+        app:layout_constraintTop_toBottomOf="@+id/tv_v_cell_red" />
+
+    <TextView
+        android:id="@+id/tv_v_cell_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Blue: 000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_v_cell_green"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_cell_green" />
+
+    <TextView
+        android:id="@+id/tv_v_cell_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="32dp"
+        android:text="Green: 000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_v_cell_red"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_v_cell_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:text="Red: 000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_v_cell_green"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
